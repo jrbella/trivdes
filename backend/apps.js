@@ -22,3 +22,9 @@ app.get('/aboutus', function(req,res){
      console.log('app /aboutus');
      return res.status(200).send("/aboutus.html");
 });
+
+
+app.listen(port, function(){
+  console.log("Application is running:");
+  console.log("Listening on " + port);
+});
